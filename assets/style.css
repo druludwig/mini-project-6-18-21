@@ -1,12 +1,12 @@
 :root {
-    --primary-color: purple;
+    --primary-color: #61c06e;
     --secondary-color: white;
+    --accent-color-1: rgb(90, 86, 86);
 }
 
 body {
-    background-color: gray;
+    background-color: var(--accent-color-1);
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 p {
@@ -14,12 +14,10 @@ p {
     color: white;
 }
 
-h1{
+h1 {
     font-size: 200%;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
-
-
 
 header {
     width 100%;
@@ -27,7 +25,7 @@ header {
 
 }
 
-main{
+main {
     margin: 40px 0px 0px 0px;
 }
 
@@ -47,15 +45,33 @@ section {
     margin: 0 20px 40px;
 }
 
-.info-box h2{
+.info-box h2 {
     color: var(--secondary-color);
     font-size: 150%;
     width: 90%;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     position: relative;
     top: -15px;
     margin: 0px 20px 0px 20px;
     background-color: gray;
     text-align: center;
+}
+
+.info-box-inside {
+    color: var(--primary-color);
+    font-size: 150%;
+    width: 90%;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    position: relative;
+    margin: 0px 20px 0px 20px;
+    background: linear-gradient(180deg, #aaecb3, var(--primary-color));
+}
+
+pre {
+    display:flex;
+    color: var(--accent-color-1);   
+    font-size: 90%;
+    justify-content: flex-end;
 }
